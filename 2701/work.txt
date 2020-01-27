@@ -1,1 +1,193 @@
+Script started on Sunday 26 January 2020 09:28:50 PM IST
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ ls
+work.txt
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ ls -l
+total 0
+-rw-rw-r-- 1 s4c2 s4c2 0 Jan 26 21:28 work.txt
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ ls -lt
+total 0
+-rw-rw-r-- 1 s4c2 s4c2 0 Jan 26 21:28 work.txt
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ ls -ltr
+total 0
+-rw-rw-r-- 1 s4c2 s4c2 0 Jan 26 21:28 work.txt
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ ls ab* -d
+ls: cannot access 'ab*': No such file or directory
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ ls ab* -d[2P-ltrab* -d[1P[1P[1@2[1@7[1@0[1@1
+ls: cannot access '2701*': No such file or directory
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cat abc[K[K[K[K>abc.txt
+apple
+mango
+pomagranate
+banana
+pears
+guava^C
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -n abc,[K.txt
+apple
+banana
+mango
+pears
+pomagranate
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -rnk7 fn[K[Kabc.txt
+pomagranate
+pears
+mango
+banana
+apple
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cut -f3 abc.txt
+apple
+mango
+pomagranate
+banana
+pears
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cut -f1 abc.txt
+apple
+mango
+pomagranate
+banana
+pears
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cut -f1 abc.txt3[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kf3 -d''b'a'n'a'n'a'
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cut f3 -d'banana'[K[K[K[K[K[K[K[K''
+cut: option requires an argument -- 'd'
+Try 'cut --help' for more information.
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cut f3 -d''[K[K''d'
+cut: option requires an argument -- 'd'
+Try 'cut --help' for more information.
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cat>[K]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cat> xyz.txt
+toma    sam
+tom
+daivd   vid
+steve
+michael
+^C
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join r.abc.txt r .xyz.txt
+join: r.abc.txt: No such file or directory
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join r.abc.txt r..xyz.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.abc.txt r.x[1Pyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[Cabc.txt r.xy[1Pz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxyz[1P.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cxyz.[1Ptxt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C
+
+join: abc.txt:4: is not sorted: banana
+join: xyz.txt:3: is not sorted: david
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ paste ac[Kbc.txt xy z.txt
+apple	sam
+mango	tom
+pomagranate	david
+banana	steve
+pears	michael
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -nk7 abc.tx t
+apple
+banana
+mango
+pears
+pomagranate
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -nk7 xyz.tx t
+david
+michael
+sam
+steve
+tom
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -nk7 xyz.txtt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[Cabc.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ paste abc.txt xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.[1Ptxt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[Cr.abc.txt r.xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [4Pcat> xyz.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjoin r.abc.txt r..xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[Cabc.txt xyz.[4Ptxt
+join: abc.txt:4: is not sorted: banana
+join: xyz.txt:3: is not sorted: david
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz..txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -nk7 xyz.txt[K[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[Cabc.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[Cxyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjoin abc.txt xyz..txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -nk7 xyz.txt[K[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[Cabc.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ paste abc.txt xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.[1Ptxt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ paste abc.txt xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ sort -nk7 abc.txt[K[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[Cxyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -c ""s"t"e"v"e"[Cx yz.txt
+^[[A^[[A^[[B
 
+^C
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ grep -c "steve"xyyz.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -c "steve"xyyz.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C xyz.txt
+1
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ gep[K[Krep -r ""e"[C abc. txt
+appl[01;31m[Ke[m[K
+pomagranat[01;31m[Ke[m[K
+p[01;31m[Ke[m[Kars
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz .txt -j2
+ apple sam
+ apple tom
+ apple david
+ apple steve
+ apple michael
+ mango sam
+ mango tom
+ mango david
+ mango steve
+ mango michael
+ pomagranate sam
+ pomagranate tom
+ pomagranate david
+ pomagranate steve
+ pomagranate michael
+ banana sam
+ banana tom
+ banana david
+ banana steve
+ banana michael
+ pears sam
+ pears tom
+ pears david
+ pears steve
+ pears michael
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz..txt -j2[K4
+ apple sam
+ apple tom
+ apple david
+ apple steve
+ apple michael
+ mango sam
+ mango tom
+ mango david
+ mango steve
+ mango michael
+ pomagranate sam
+ pomagranate tom
+ pomagranate david
+ pomagranate steve
+ pomagranate michael
+ banana sam
+ banana tom
+ banana david
+ banana steve
+ banana michael
+ pears sam
+ pears tom
+ pears david
+ pears steve
+ pears michael
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk''{'}'p}'r}'i}'n}'t}'"}'"}'\"}'t"}' [A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C$}''[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0}'[C[C [Kxyz.txt[C xyz.txt[C[C[C[C[C[C[C[C[C[C
+awk{print"\t"$0}: command not found
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk'{print"\t"$0}}' xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk'{print"\t"$0}}' xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.[2Ptxt -j42[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ grep -r "e" abc.txt[K[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.txt -j24[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk'{print"\t"$0}' xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk'{print"\t"$0}}' xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk'{print"\t"$0}}' xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.[2Ptxt -j4[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk'{print"\t"$0}' xyz.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ join abc.txt xyz.[2Ptxt -j4[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk'{print"\t"$0}' xyz.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cct[Kat> num.txt
+2coke
+2burgers
+2fre ies^[[D^[[D^[[C                  ifries^[[D^[[D^[[D^[[D                      1fries
+4breads
+^C^F
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cat> num.txt
+2coke
+2burgers
+1fries
+4breads
+^C
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk ''{'}'s}'+}'s}'1}'[1P}'[1P}'$}'1}'[C 'E'N'D' [A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ''{'}'p}'r}'i}'n}'t}' }'s}'[C[C num.txt
+
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk '{s+$1} END {{print s}' num.txt[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [4Pcat> num.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+4
+12
+6
+4
+8
+^C
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ cat> num.txtawk '{s+$1} END {{print s}' num.txt
+
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ awk '{s+$1} END {{print s}' num.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C=$1} END [1@{[A]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ [C[C[C[C[C[C[C[C[C
+
+34
+]0;s4c2@ceclab-Veriton-Series: ~/ceccs18c46/cs232/2701[01;32ms4c2@ceclab-Veriton-Series[00m:[01;34m~/ceccs18c46/cs232/2701[00m$ exit
+exit
+
+Script done on Sunday 26 January 2020 10:25:10 PM IST

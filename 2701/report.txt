@@ -1,0 +1,109 @@
+CEC CS 18 c46    
+Prayank P Nair
+
+--------------------------------
+#1: Sorting of a text file
+
+Program:-sort -n abc.txt
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+	#unsorted file
+	 abc.txt
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	#displayed sorted version of the entered file
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:Joining two text files and display all combinations
+
+Program:-join abc.txt xyz.txt
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+	#Two text files that needs to be joined
+	 
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	#displayed all the combinations of two text files
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------
+		
+
+#3:Searching a particular element in the entered file
+Program:-grep -r "e" abc
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+	#Element to be searched
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	#Displayed all the occurances of the keyword
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------
+
+#4:To display the sum of numbers in a file
+Program:-awk '{s+=$1} END {print s}' num.txt
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+	#A file of numbers
+	 
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	#displayed the sum of all the numbers in the file
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------
+
+#5:
+
+
+
