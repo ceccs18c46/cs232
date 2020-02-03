@@ -1,0 +1,101 @@
+CEC CS 18 c46   03/02/2020 
+Prayank P Nair
+
+--------------------------------
+#1: Aim:-Task 3(Networking Tasks)
+
+Program:-if config -a
+	 if config enp0s25
+	 route -n
+	 route add
+	 ping
+	 
+---------------------------------
+
+Input: (If relevant)
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	if config -a -> Displays all the available network 				devices.
+ 	route -n -> Displays the kernel routing table.
+	route add -> Adds a new route to the table.
+	ping -> Detects whether a system is connected to the 			network or not.
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2: Aim:-Task 5(ftp usage)
+Program:- sftp cs18c46@192.168.0.30
+	  cd 2701
+	  get report.txt
+	  cd..
+	  mkdir 0302
+	  cd 0302
+	  put report.txt
+	  rename report.txt rep.txt
+	  rm rep.txt
+	  exit
+
+---------------------------------
+
+Input: (If relevant)
+	 
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	Entered the ftp server.
+	cd 2701 -> Changed the current directory.
+	Fetched the file from 2701.
+	Go to the previous directory.
+	Make new directory 0302.
+	Change current directory to 0302.
+	Put the fetched file to 0302.
+	Renamed the file.
+	Removed the newly added file. 
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------
+		
+
+#3:Task 4(Further networking tasks)
+	  
+---------------------------------
+Command/Shell script/Program
+	ssh 
+	rsync
+	scp
+
+---------------------------------
+
+Input: (If relevant)
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+	ssh cs18c46@192.168.0.30 -> Used to open a secured connection to remote device.
+	rsync -a -> Displays various operations and options of rsync.
+	scp report.txt cs18c46@192.168.0.30:2701 -> Uploads report.txt to 2701/in the host 192.168.0.30.
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------
+
+
+
