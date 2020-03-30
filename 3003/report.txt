@@ -1,0 +1,36 @@
+CECCS18C46                  30-03-2020
+Prayank P Nair
+ip: 192.168.43.51
+------------------------------------------------------
+#1: Setting up http and ftp servers (t7)
+------------------------------------------------------
+
+Command/Shell input:
+------------------------------------------------------
+	
+	# installed ftp server
+	sudo apt-get install vsftpd
+	
+	# edited server configuration using nano editor
+	sudo nano /etc/vsftpd.conf
+	
+	# connected to ftp 
+	fpt localhost	
+	
+	# installed apache2 
+	sudo apt-get install apache2
+	
+	# edited HTML file using nano editor
+	sudo nano /var/www/html/index.html
+
+-------------------------------------------------------
+Output: 
+	
+	# ftp server successfully set up in home pc 
+	
+	# Apache http server :screenshot of webpage is attached.
+	capture.png	
+
+--------------------------------------------------------
+Remarks if any: 
+
