@@ -1,0 +1,117 @@
+CECCS18C46         01-04-2020
+Prayank P Nair
+Home ip: 192.168.43.51
+------------------------------------------------------
+#1: LAMP Stack operations (t8.3)
+---------------------------------
+Command/Shell script/Program name: 
+---------------------------------
+      # To update all local packages
+	     sudo apt-get update
+
+      1) Install Apache               
+                
+                # To install Apache
+                       sudo apt-get install apache2
+ 
+                # To check whether Apache is installed correctly
+                       sudo service apache2 status
+
+       2) Install MySQL
+
+                # To install MySQL and create a database
+                       sudo apt-get install mysql-server
+             
+                # To check whether the MySQL server is running
+                       sudo systemctl status mysql 
+               
+
+       3) Install PHP
+              
+                # To install PHP
+                       sudo apt-get install php libapache2-mod-php php-mysql 
+
+                # To test PHP processing on Web Server
+                       sudo nano /var/www/html/info.php
+
+                # Create a sample php page using nano editor:
+                       sudo nano /var/www/html/index.php
+
+
+
+
+--------------------------------
+Input:
+	    1. info.php	
+         
+        
+	    2. index.php
+
+------------------------------------
+Output: 
+
+     
+	# php version info at 192.168.43.51/info.php
+	       info.png
+	
+	# php page at 192.168.43.51/index.php
+	       index.png
+
+
+
+
+
+
+--------------------------------
+
+#2: Aim/task: Package management (t8.1)
+---------------------------------
+
+Command/Shell script/Program name: 
+---------------------------------
+
+           # To update all local packages
+	        sudo apt-get update
+
+           # Install calcurse
+                sudo apt-get install calcurse
+
+                 # Remove calcurse
+                      sudo apt remove calcurse
+  
+           # Install tasksel
+                sudo apt-get install tasksel
+
+                 # To remove tasksel 
+                      sudo apt remove tasksel
+
+           # Install apache2
+	        sudo apt-get install apache2
+
+           # To get the status of package apache2
+                sudo dpkg -s apache2
+ 
+         
+           # To list all installed packages
+                sudo apt list > packages.txt
+
+
+--------------------------------
+Output: 
+
+
+           # List of all installed packages: packages.txt 
+              
+	
+
+
+--------------------------------
+
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+

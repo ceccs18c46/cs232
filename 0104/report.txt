@@ -1,0 +1,25 @@
+CECCS18C46	01-04-2020
+Prayank P Nair
+Home ip:-192.168.43.51
+
+
+--------------------------------
+#1: Aim/task: Linux installation (t6)
+---------------------------------
+
+
+Command/Shell script/Program name
+---------------------------------
+       
+       #Ubuntu(18.04.4 LTS) installation using bootable live USB.
+
+--------------------------------
+Output: 
+
+       #Attached images one-six(.jpg) shows the various steps during the installation process.
+
+       #Ubuntu 18.04.4 LTS is installed alongside Windows10.
+
+
+-------------------
+Remarks if any:
