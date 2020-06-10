@@ -1,0 +1,12 @@
+Logged in Username: nairpn
+Current shell of the user: /bin/bash
+User's home directory: /home/nairpn
+User's operating system:
+GNU/Linux
+User's current path setting: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+User's current working directory:
+/home/nairpn/cs232/1405
+Number of user's currently logged in:
+ 13:11:16 up 44 min,  1 user,  load average: 0.27, 0.29, 0.23
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+nairpn   :0       :0               12:28   ?xdm?  43.91s  0.01s /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
