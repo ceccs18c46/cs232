@@ -1,0 +1,53 @@
+CECCS18C46	02-04-2020
+Prayank P Nair
+Home ip:-192.168.43.51
+
+
+--------------------------------
+#1: Aim/task: Kernel compilation (t8.4)
+---------------------------------
+Command/Shell script/Program name:
+---------------------------------
+
+       # To download the latest stable kernel 
+	       wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.13.tar.xz
+
+       # Extract the source code
+	       unxz -v linux-5.5.13.tar.xz
+
+       # Obtain PGP Signature for the kernel
+               wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.13.tar.sign
+
+       # Verify the PGP Signature
+               gpg --verify linux-5.5.13.tar.sign 
+
+       # Extract linux tarball
+	       tar xvf linux-5.5.13.tar
+
+       # Create the configuration file
+               cd linux-5.5.13
+               cp -v /boot/config-$(uname -r) .config
+
+       # Install the various development tools
+               sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+
+       # Compile the kernel
+               make -j $(nproc)
+
+
+
+-------------------------------
+Output: 
+
+       # Compiled Kernel at /linux-5.5.13
+               Screenshot of the compiled file is attached (kernelcomp.png)
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+       
